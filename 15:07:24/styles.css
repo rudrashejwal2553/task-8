@@ -1,0 +1,87 @@
+body {
+    width: 50%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1rem;
+   border-radius: 15px;
+
+}
+  h3{
+   text-align: center;
+  }
+  .container{
+    box-sizing: border-box;
+    background: #f0e5e5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"],input[type="msg"]{
+    width: 96.5%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ADBC9F;
+    color: #130101;
+    border-radius: 17px;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  button:hover {
+    background-color: #043b0f;
+  }
+  
+  #message {
+    margin-top: 20px;
+    color: red;
+  }
+  .rightM{
+    width:50%;
+  }
+  textarea{
+    border-radius: 4px;
+   
+  }
+
+  @keyframes container{
+    0%{
+      background-color:#B4B4B8;
+    }
+    25%{
+      background-color:#C7C8CC;
+    }
+    50%{
+      background-color:#E3E1D9 ;
+    }
+   75%{
+      background-color: #F2EFE5;
+    }
+    100%{
+      background-color:#F2EFE5;
+    }
+
+  }
+
+ #container{
+    animation-name:container;
+   animation-duration: 2s;
+   animation-timing-function: ease-in;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-fill-mode: backwards;
+   width: 100%;
+   border-radius: 5px ;
+   padding: 20px;
+  
+  }

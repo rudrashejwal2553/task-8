@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email OTP Authentication</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id='container' class='rightM'>
+    <form id="studentForm">
+      <h3>Student Registration Form</h3>
+      <div class="formpart">
+        <div id="compName">
+          <input id="firstN" type="text" placeholder="NAME" name="user_name" />
+        </div>
+
+        <div id="compName">
+          <input id="address" type="text" placeholder="ADDRESS" name="user_address" />
+        </div>
+
+        <div id="compName">
+          <input type="text" placeholder="AGE" name="user_age" />
+        </div>
+
+        <div id="compName">
+          <input id="phone" type="text" placeholder="PHONE NUMBER" name="user_number" maxLength="10" minLength="10" />
+        </div>
+
+        <div id="compName">
+          <input id="email" type="email" placeholder="EMAIL" name="email_id" />
+        </div>
+
+        <div id="compName">
+          <input type="password" placeholder="PASSWORD" name="user_password" />
+        </div>
+
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="msg"></textarea>
+
+        <button type="button" class="btnD" id="sendOtpBtn">Send OTP</button>
+
+        <div id="compName">
+          <input type="text" id="otpInput" placeholder="Enter OTP" />
+        </div>
+
+        <button type="button" class="btnD" id="verifyOtpBtn">Verify OTP</button>
+
+        <div id="ans"></div>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("sqg1qjThAMjO7VGSs"); // Replace with your EmailJS user ID
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
